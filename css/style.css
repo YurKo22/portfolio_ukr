@@ -94,8 +94,18 @@ body {
   align-items: center;
   z-index: 4;
 }
+.logo:focus {
+  border: 3px solid #2352de;
+  outline-style: none;
+}
+.logo:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+.logo:active {
+  background: rgba(255, 255, 255, 0.5);
+}
 .menu__list {
-  max-height: 53px;
+  max-height: 52px;
   display: flex;
 }
 .menu__list-item {
@@ -105,17 +115,17 @@ body {
   margin-right: 30px;
 }
 .menu__list-link:focus {
-   padding: 1           px;     
-   border: 2px solid rgba(210, 232, 246, 0.5);  
-   border-radius: 10%    ;                      
-   outline-style: none  ; 
+  padding: 1px;
+  border: 2px solid rgba(210, 232, 246, 0.5);
+  border-radius: 10%;
+  outline-style: none;
 }
 .menu__list-link:hover {
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 .menu__list-link:active {
-  color: rgba(255, 255, 255, 0.7);  
-}                       
+  color: rgba(255, 255, 255, 0.7);
+}
 
 .menu__list-link {
   color: #ffffff;
@@ -142,26 +152,43 @@ body {
   font-size: 90px;
   line-height: 130%;
 }
-.header__more {
+.header__more{
+   display: flex;
+   flex-direction: column;
+   width: 158px;
+   position: relative;
+   bottom: 30px;
+   left: 50%;
+   justify-content: center;
+   align-items: center;
+   z-index: 10;
+}
+.header__more-text {
   text-align: center;
   font-weight: 600;
   font-size: 18px;
   line-height: 130%;
   color: #ffffff;
-  margin-bottom: 60px;
-  position: relative;
-  z-index: 5;
-}
-.header__more::after {
-  content: "";
-  border: medium solid transparent;
-  top: 100%;
-  left: 50%;
+  z-index: 8;
+  : 0;
+  align-items: center;
   position: absolute;
-  border: solid #ffffff;
-  border-radius: 20%;
-  border-width: 0 5px 5px 0;
-  display: inline-block;
-  padding: 10px;
-  transform: rotate(45deg);
+}
+.header__more-icon{
+   width: 37px;
+   z-index: 9;
+   position: absolute;
+}
+.header__more-text:focus,
+.header__more-icon         :focus {
+  padding: 1px;
+  border: 1px solid rgba(210, 232, 246, 0.5);
+  border-radius: 10%;
+  outline-style: none;
+}
+.header__more-text:hover {
+  text-decoration: underline;
+}
+.header__more-text:active {
+  color: rgba(255, 255, 255, 0.7);
 }
