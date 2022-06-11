@@ -1,13 +1,11 @@
 html {
   box-sizing: border-box;
 }
-
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
-
 ul[class],
 ol[class] {
   padding: 0;
@@ -60,7 +58,15 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
-
+.title {
+   position: relative;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 48px;
+   line-height: 130%;
+   color: #333333;
+   margin-bottom: 60px;
+ }
 /* --------- header --------------*/
 .header_content {
   background-image: url("../images/header-bg.jpg");
@@ -126,7 +132,6 @@ body {
 .menu__list-link:active {
   color: rgba(255, 255, 255, 0.7);
 }
-
 .menu__list-link {
   color: #ffffff;
 }
@@ -143,6 +148,7 @@ body {
   z-index: 5;
 }
 .header-subtitle {
+  padding-top: 100px;
   font-weight: 400;
   font-size: 48px;
   line-height: 130%;
@@ -154,14 +160,14 @@ body {
 }
 .header__more {
   display: flex;
-  width: 158px;
+  width: 165px;
   position: relative;
   bottom: 30px;
   left: 50%;
+  margin-bottom: 30px;
   z-index: 10;
 }
 .header__more-text {
-  text-align: center;
   font-weight: 600;
   font-size: 18px;
   line-height: 130%;
@@ -169,19 +175,21 @@ body {
   z-index: 8;
 }
 .header__more-text::after {
-  content: "ва ав";
-  display: inline-block;
+  content: "";
+  display: flex;
   background: url("../images/arrow-down.svg") no-repeat top center;
   position: absolute;
   width: 37px;
   height: 23px;
+  left: 40%;
   margin-top: 10px;
-  z-index: 8;
 }
 .header__more-text:focus {
-  padding: 1px;
+  border: 1px solid rgba(210, 232, 246, 0.5);
   border-radius: 10%;
-  outline-style: 5px solid rgba(210, 232, 246, 0.5) ;
+  outline-style: none;
+  padding: 1px 1px 39px;
+  margin-bottom: -40px;
 }
 .header__more-text:hover {
   text-decoration: underline;
@@ -189,3 +197,25 @@ body {
 .header__more-text:active {
   color: rgba(255, 255, 255, 0.7);
 }
+/* --------- Section About------------ */
+.about {
+  background-color: #ffffff;
+  padding: 142px 0;
+}
+.about__title::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(35, 82, 222, 0.1);
+  width: 238px;
+  height: 16px;
+  left: 0;
+  bottom: 5px;
+}
+.about__text p {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 160%;
+   color: #333333;
+   margin-bottom: 30px;
+ }
