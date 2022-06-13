@@ -52,7 +52,6 @@ body {
   font-size: 14px;
   line-height: 130%;
 }
-/* font-family: "Roboto", sans-serif; */
 .container {
   max-width: 1200px;
   padding: 0 15px;
@@ -322,8 +321,6 @@ body {
 }
 .services__item--support::before {
   background-image: url("../images/support-icon.svg");
-}
-.services__item--layout {
 }
 .services__item-title {
   font-weight: 600;
