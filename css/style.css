@@ -51,6 +51,7 @@ body {
   font-weight: 600;
   font-size: 14px;
   line-height: 130%;
+  background-color: #ffffff;
 }
 .container {
   max-width: 1200px;
@@ -115,9 +116,13 @@ body {
 }
 .menu__list-item {
   padding-bottom: 16px;
+  transition: all 0.3s;
 }
 .menu__list-item:not(:last-child) {
   margin-right: 30px;
+}
+..menu__list-link{
+   transition: all 0.3s;
 }
 .menu__list-link:focus {
   padding: 1px;
@@ -182,6 +187,7 @@ body {
   height: 23px;
   left: 40%;
   margin-top: 10px;
+  transition: all 0.3s;
 }
 .header__more-text:focus {
   border: 1px solid rgba(210, 232, 246, 0.5);
@@ -198,7 +204,6 @@ body {
 }
 /* --------- Section About------------ */
 .about {
-  background-color: #ffffff;
   padding: 142px 0;
 }
 .about__title::after {
@@ -257,6 +262,7 @@ body {
   align-items: center;
   text-transform: uppercase;
   color: #333333;
+  transition: all 0.3s;
 }
 .skills__info-title:hover {
   opacity: 0.64;
@@ -282,7 +288,6 @@ body {
 }
 /* -------- Serction services ---------- */
 .services {
-  background-color: #ffffff;
   padding: 140px 0;
 }
 .services__title::after {
