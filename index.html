@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css">
         <link rel="stylesheet" href="css/style.css">
         <title>Портфоліо Сергія Сірка | Головна сторінка</title>
     </head>
@@ -102,7 +103,7 @@
                 </div>
             </div>
         </section>
-        <div class="services">
+        <section class="services">
             <div class="container">
                 <h2 class="title services__title">Послуги</h2>
                 <div class="services__items">
@@ -120,9 +121,46 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <section class="portfolio">
+         <div class="container">
+            <div class="portfolio__top">
+               <h2 class="title portfolio__title">Мої роботи</h2>
+               <div class="portfolio__filter-btn">
+                  <button class="portfolio__btn" data-filter="all">Усі роботи</button>
+                  <button class="portfolio__btn" data-filter=".category-a">Лендінги</button>
+                  <button class="portfolio__btn" data-filter=".category-b">Корпоративні</button>
+                  <button class="portfolio__btn" data-filter=".category-c">E-commerce</button>
+              </div>
+            </div>
+            <div class="portfolio__content">
+               <div class="portfolio__item mix category-a">
+                   <img src="images/portfolio/img1.jpg" alt="Portfolio image">
+               </div>
+               <div class="portfolio__item mix category-a">
+                   <img src="images/portfolio/img2.jpg" alt="Portfolio image">
+               </div>
+               <div class="portfolio__item mix category-b">
+                   <img src="images/portfolio/img3.jpg" alt="Portfolio image">
+               </div>
+               <div class="portfolio__item mix category-b">
+                   <img src="images/portfolio/img4.jpg" alt="Portfolio image">
+               </div>
+               <div class="portfolio__item mix category-c">
+                   <img src="images/portfolio/img5.jpg" alt="Portfolio image">
+               </div>
+               <div class="portfolio__item mix category-c">
+                   <img src="images/portfolio/img6.jpg" alt="Portfolio image">
+               </div>
+               </div>
+           </div>
+           <a class="portfilio__add" href="#">Завантажити ще</a>
+         </div>
+        </section>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="js/mixitup.min.js"></script>
+        <script src="js/jquery.fancybox.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

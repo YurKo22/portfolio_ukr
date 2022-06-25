@@ -341,3 +341,41 @@ body {
   line-height: 160%;
   color: #333333;
 }
+/* -------- Section portfolio -------- */
+.portfolio {
+   padding-bottom: 140px;
+ }
+ .portfolio__top {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 60px;
+}
+ .portfolio__title::after {
+   content: "";
+   position: absolute;
+   background-color: rgba(35, 82, 222, 0.1);
+   width: 283px;
+   height: 16px;
+   left: 0;
+   bottom: 5px;
+ }
+.portfolio__filter-btn {
+}
+.portfolio__btn {
+}
+.portfolio__content {
+}
+.portfolio__item {
+}
+.mix {
+}
+.category-a {
+}
+.category-b {
+}
+.category-c {
+}
+.portfilio__add {
+}
