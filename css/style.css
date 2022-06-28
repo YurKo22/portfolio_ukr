@@ -68,7 +68,7 @@ body {
   margin-bottom: 60px;
 }
 /* --------- header --------------*/
-.header_content {
+.header__content {
   background-image: url("../images/header-bg.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -82,7 +82,7 @@ body {
   max-width: 1200px;
   position: relative;
 }
-.header_content::after {
+.header__content::after {
   content: "";
   position: absolute;
   top: 0;
@@ -96,47 +96,53 @@ body {
   display: flex;
   min-width: 100%;
   justify-content: space-between;
-  min-height: 128px;
-  align-items: center;
+  min-height: 127px;
+  align-items: flex-end;
   z-index: 4;
 }
+.logo {
+  transition: outline 0.3s linear, background-color 0.3s ease-in-out;
+}
 .logo:focus {
-  border: 3px solid #2352de;
-  outline-style: none;
+  outline: 2px rgba(210, 232, 246, 0.5);
+  border-radius: 3px;
+  outline-style: solid;
 }
 .logo:hover {
-  background: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 .logo:active {
-  background: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .menu__list {
   max-height: 52px;
   display: flex;
 }
-.menu__list-item {
+.menu__item {
   padding-bottom: 16px;
-  transition: all 0.3s;
 }
-.menu__list-item:not(:last-child) {
+.menu__item{
   margin-right: 30px;
 }
-..menu__list-link {
-  transition: all 0.3s;
+.menu__link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  transition: outline 0.3s linear, background-color 0.3s ease-in-out;
 }
-.menu__list-link:focus {
+.menu__link:focus {
   padding: 1px;
   outline: 2px rgba(210, 232, 246, 0.5);
   border-radius: 3px;
   outline-style: solid;
 }
-.menu__list-link:hover {
+.menu__link:hover {
   text-decoration: underline;
 }
-.menu__list-link:active {
+.menu__link:active {
   color: rgba(255, 255, 255, 0.7);
 }
-.menu__list-link {
+.menu__link {
   color: #ffffff;
 }
 .header__content-inner {
@@ -152,7 +158,7 @@ body {
   z-index: 5;
 }
 .header-subtitle {
-  padding-top: 100px;
+  padding-top: 170px;
   font-weight: 400;
   font-size: 48px;
   line-height: 130%;
@@ -167,7 +173,7 @@ body {
   width: 165px;
   position: relative;
   bottom: 30px;
-  left: 50%;
+  left: 43%;
   margin-bottom: 30px;
   z-index: 10;
 }
@@ -368,7 +374,7 @@ body {
   font-size: 24px;
   line-height: 160%;
   color: #333333;
-  transition: all 0.3s ease 0s;
+  transition: outline 0.3s linear, background-color 0.3s ease-in-out;
 }
 .portfolio__btn:focus {
   outline-color: #2352de;
@@ -404,14 +410,17 @@ body {
   line-height: 130%;
   color: #ffffff;
   background: #2352de;
+  transition: outline-color 0.3s linear, background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
 }
 .portfolio__add:focus {
   outline-color: rgba(35, 82, 222, 0.5);
 }
 .portfolio__add:hover {
   background-color: #ffffff;
-  border: 1px solid #2352de;
   color: #2352de;
+  outline: 2px rgba(210, 232, 246, 0.5);
+  outline-style: solid;
 }
 .portfolio__add:active {
   background-color: #2352de;
