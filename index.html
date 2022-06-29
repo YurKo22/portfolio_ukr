@@ -11,12 +11,12 @@
         <title>Портфоліо Сергія Сірка | Головна сторінка</title>
     </head>
     <body>
-        <header class="header">
+        <header class="header" >
             <div class="header__top">
                 <div class="container container-header">
                     <div class="header__top-inner">
                         <a class="logo" href="#">
-                            <img class="logo-img" src="images/logo.svg" alt="logo img">
+                            <img class="logo-img" src="images/logo.svg" alt="Логотип">
                         </a>
                         <nav class="menu">
                             <ul class="menu__list">
@@ -43,23 +43,24 @@
                     </div>
                 </div>
             </div>
+
             <div class="header__content">
                 <div class="container">
                     <div class="header__content-inner bg">
                         <div class="content__text">
                             <h2 class="header-subtitle">Вітаю, я Сергій Сірко</h2>
                             <h1 class="header-title">
-                                <p>frontend-</p>
-                                <p>розробник</p>
+                                frontend- розробник
                             </h1>
                         </div>
                         <div class="header__more">
-                            <a class="header__more-text" href="#">дивитися роботи</a>
+                            <a class="header__more-text" href="#portfolio">дивитися роботи</a>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
+
         <main class="main">
             <section class="about">
                 <div class="container">
@@ -76,54 +77,57 @@
                     </div>
                 </div>
             </section>
+
             <section class="skills">
                 <div class="container">
                     <h2 class="title skills__title">Навички</h2>
                     <div class="skills__inner">
                         <img class="skills__image" src="images/skills-image.jpg" alt="Портрет">
-                        <div class="skills__info">
-                            <div class="skills__info-item">
+                        <ul class="skills__info">
+                            <li class="skills__info-item">
                                 <div class="skills__info-title">HTML</div>
                                 <div class="skills__info-row">
                                     <span style="width:calc(600px - 510px);"></span>
                                 </div>
-                            </div>
-                            <div class="skills__info-item">
+                            </li>
+                            <li class="skills__info-item">
                                 <div class="skills__info-title">CSS</div>
                                 <div class="skills__info-row">
                                     <span style="width:calc(600px - 480px);"></span>
                                 </div>
-                            </div>
-                            <div class="skills__info-item">
+                            </li>
+                            <li class="skills__info-item">
                                 <div class="skills__info-title">JS</div>
                                 <div class="skills__info-row">
                                     <span style="width:calc(600px - 366px);"></span>
                                 </div>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
+
             <section class="services">
                 <div class="container">
                     <h2 class="title services__title">Послуги</h2>
-                    <div class="services__items">
-                        <div class="services__item services__item--layout">
+                    <ul class="services__items">
+                        <li class="services__item services__item--layout">
                             <h3 class="services__item-title">Верстка проєктів</h3>
                             <p class="services__item-text">Зроблю якісну верстку вашого проєкта за наявним макетом або прикладами робіт, які вам подобаються</p>
-                        </div>
-                        <div class="services__item services__item--dev">
+                        </li>
+                        <li class="services__item services__item--dev">
                             <h3 class="services__item-title">Посадка на CMS</h3>
                             <p class="services__item-text">Інтегрую ваш проєкт з однією з популярних CMS</p>
-                        </div>
-                        <div class="services__item services__item--support">
+                        </li>
+                        <li class="services__item services__item--support">
                             <h3 class="services__item-title">Підтримка сайта</h3>
                             <p class="services__item-text">Гарантую підтримку вашого сайта протягом 30 днів післе здачі проєкта</p>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </section>
-            <section class="portfolio">
+
+            <section class="portfolio" id="portfolio">
                 <div class="container">
                     <div class="portfolio__top">
                         <h2 class="title portfolio__title">Мої роботи</h2>
@@ -134,30 +138,43 @@
                             <button class="portfolio__btn" data-filter=".category-c">E-commerce</button>
                         </div>
                     </div>
-                    <div class="portfolio__content">
-                        <div class="portfolio__item mix category-a">
-                            <img src="images/portfolio/img1.jpg" alt="Portfolio image">
-                        </div>
-                        <div class="portfolio__item mix category-a">
-                            <img src="images/portfolio/img2.jpg" alt="Portfolio image">
-                        </div>
-                        <div class="portfolio__item mix category-b">
-                            <img src="images/portfolio/img3.jpg" alt="Portfolio image">
-                        </div>
-                        <div class="portfolio__item mix category-b">
-                            <img src="images/portfolio/img4.jpg" alt="Portfolio image">
-                        </div>
-                        <div class="portfolio__item mix category-c">
-                            <img src="images/portfolio/img5.jpg" alt="Portfolio image">
-                        </div>
-                        <div class="portfolio__item mix category-c">
-                            <img src="images/portfolio/img6.jpg" alt="Portfolio image">
-                        </div>
-                    </div>
-                    <a class="portfolio__add" href="#">Завантажити ще</a>
+                    <ul class="portfolio__content"
+                        <li class="portfolio__item mix category-a">
+                           <a class="portfolio__link" href="#">
+                              <img src="images/portfolio/img1.jpg" alt="Моя робота">
+                           </a>
+                        </li>
+                        <li class="portfolio__item mix category-a">
+                           <a class="portfolio__link" href="#">
+                              <img src="images/portfolio/img2.jpg" alt="Моя робота">
+                           </a>
+                        </li>
+                        <li class="portfolio__item mix category-b">
+                           <a class="portfolio__link" href="#">
+                              <img src="images/portfolio/img3.jpg" alt="Моя робота">
+                           </a>
+                        </li>
+                        <li class="portfolio__item mix category-b">
+                           <a class="portfolio__link" href="#">
+                              <img src="images/portfolio/img4.jpg" alt="Моя робота">
+                           </a>
+                        </li>
+                        <li class="portfolio__item mix category-c">
+                           <a class="portfolio__link" href="#">
+                              <img src="images/portfolio/img5.jpg" alt="Моя робота">
+                           </a>
+                        </li>
+                        <li class="portfolio__item mix category-c">
+                           <a class="portfolio__link" href="#">
+                              <img src="images/portfolio/img6.jpg" alt="Моя робота">
+                           </a>
+                        </li>
+                    </ul>
+                    <button class="portfolio__add" href="#">Завантажити ще</button>
                 </div>
             </section>
         </main>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="js/mixitup.min.js"></script>
