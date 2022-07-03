@@ -460,7 +460,6 @@ body {
 .reviews__blockquote {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
   margin-right: 100px;
@@ -478,7 +477,7 @@ body {
   margin-bottom: 20px;
 }
 .reviews__author {
-   font-style: normal;
+  font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 130%;
@@ -486,6 +485,23 @@ body {
   margin-bottom: 20px;
 }
 .reviews__video {
+  background-image: url("../images/video-bg.jpg");
+  width: 570px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.reviews__video-link {
+.reviews__video-link       :focus {
+   outline: 3px #90A8EE;
+}
+.reviews__video:hover {
+   
+}
+.reviews__video:active {
+  color: #2352de;
+  text-decoration: none;
 }
