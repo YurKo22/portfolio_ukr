@@ -503,6 +503,19 @@ body {
   position: relative;
   transition: all 0.3s ease 0s;
 }
+.reviews__video-link::before {
+  content: "";
+  background-image: url("../images/play.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size:auto;
+  background-position: center center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
 .reviews__video-link::after {
   content: "";
   position: absolute;
@@ -517,6 +530,7 @@ body {
   display: none;
 }
 .reviews__video-link:focus::after {
+  border: 3px solid #90A8EE;
   opacity: 0.3;
 }
 .reviews__video-link:hover::after {
@@ -594,13 +608,6 @@ body {
 .contacts {
   padding-bottom: 140px;
 }
-/* -------  footer ----------- */
-.footer {
-  background-color: #343740;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .contacts__title::after {
   content: "";
   position: absolute;
@@ -609,6 +616,13 @@ body {
   height: 16px;
   left: 0;
   bottom: 5px;
+}
+/* -------  footer ----------- */
+.footer {
+  background-color: #343740;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .footer__logo {
   padding: 50px 0;
