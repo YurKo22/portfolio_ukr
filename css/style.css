@@ -541,41 +541,40 @@ body {
   align-items: center;
 }
 .numbers__item {
-   padding: 50px 46px;
-   background: #f6f6f8;
-   border: 1px solid #dbdbed;
-   position: relative;
+  padding: 150px 40px 50px;
+  background: #f6f6f8;
+  border: 1px solid #dbdbed;
+  position: relative;
+  width: 23.333%;
+  max-height: 286px;
 }
-.numbers__item:not(:last-child){
-margin-right: 17px;
+.numbers__item:not(:last-child) {
+  margin-right: 17px;
 }
 .numbers__item::before {
-   content: "";
-   display: block;
-   position: absolute;
-   top: 0;
-   left: 0;
-   right: 0;
-   height: 80px;
-   margin-bottom: 20px;
-
- }
- .numbers__item--works::before{
-   background-image: url(..//images/works-icon.svg);
-   width: 98px;
- } 
- .numbers__item--clients::before{
-   background-image: url(..//images/clients-icon.svg);
-   width: 92px;
- } 
- .numbers__item--coffee::before{
-   background-image: url(..//images/coffee-icon.svg);
-   width: 80px;
- } 
- .numbers__item--works::before{
-   background-image: url(..//images/review-icon.svg);
-   width: 80px;
- } 
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 35%;
+  height: 80px;
+}
+.numbers__item--works::before {
+  background-image: url(..//images/works-icon.svg);
+  width: 98px;
+}
+.numbers__item--clients::before {
+  background-image: url(..//images/clients-icon.svg);
+  width: 92px;
+}
+.numbers__item--coffee::before {
+  background-image: url(..//images/coffee-icon.svg);
+  width: 80px;
+}
+.numbers__item--review::before {
+  background-image: url(..//images/review-icon.svg);
+  width: 80px;
+}
 .numbers__title {
   font-weight: 600;
   font-size: 44px;
@@ -590,4 +589,27 @@ margin-right: 17px;
   line-height: 130%;
   color: #333333;
   margin-bottom: 20px;
+}
+/* ------ Section Contacts ----------- */
+.contacts {
+  padding-bottom: 140px;
+}
+/* -------  footer ----------- */
+.footer {
+  background-color: #343740;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacts__title::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(35, 82, 222, 0.1);
+  width: 242px;
+  height: 16px;
+  left: 0;
+  bottom: 5px;
+}
+.footer__logo {
+  padding: 50px 0;
 }
