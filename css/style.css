@@ -225,15 +225,15 @@ body {
   left: 0;
   bottom: 5px;
 }
-.about__text p{
+.about__text p {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 160%;
   color: #333333;
 }
-.about__text p:not(:last-child){
-margin-bottom: 25px;
+.about__text p:not(:last-child) {
+  margin-bottom: 25px;
 }
 /* --------- Section Skills-------------- */
 .skills {
@@ -648,15 +648,36 @@ margin-bottom: 25px;
 }
 .contacts__phone {
   margin-bottom: 15px;
+  transition: outline-color 0.3s;
 }
+.contacts__phone:focus{
+  outline-color: #91a8ef;
+}
+.contacts__phone:hover{
+  text-decoration: underline;
+}
+
 .contacts__mail {
   margin-bottom: 21px;
+  transition: outline-color 0.3s;
+}
+.contacts__mail:focus{
+  outline-color: #91a8ef;
+}
+.contacts__mail:hover{
+  text-decoration: underline;
 }
 .contacts__socials {
   display: flex;
 }
+.contacts__socials-link {
+  transition: outline-color 0.3s;
+}
 .contacts__socials-link:not(:last-child) {
   margin-right: 20px;
+}
+.contacts__socials-link a:focus {
+  outline-color: #91a8ef;
 }
 .form__row {
   display: flex;
@@ -674,6 +695,7 @@ margin-bottom: 25px;
   font-weight: 400;
   background-color: #f6f6f8;
   margin-bottom: 30px;
+  transition: outline-color 0.3s;
 }
 .form input {
   min-width: 255px;
@@ -688,7 +710,15 @@ margin-bottom: 25px;
   min-height: 114px;
   resize: none;
 }
-.form button {
+.form input,
+.form textarea:focus {
+  outline-color: #91a8ef;
+}
+.form input,
+.form textarea:hover {
+  color: #000000;;
+}
+.button {
   padding: 12px 24px;
   background-color: #2352de;
   font-weight: 600;
@@ -696,6 +726,16 @@ margin-bottom: 25px;
   line-height: 130%;
   color: #ffffff;
   cursor: pointer;
+  transition: outline-color 0.3s, outline 0.3s;
+}
+.button:focus {
+  outline-color: rgba(35, 82, 222, 0.5);
+}
+.button:hover {
+  background-color: #ffffff;
+  color: #2352de;
+  outline: 2px rgba(210, 232, 246, 0.5);
+  outline-style: solid;
 }
 /* -------  footer ----------- */
 .footer {

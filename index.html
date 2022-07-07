@@ -296,22 +296,22 @@
                 <li class="form__row">
                   <div class="form__field">
                     <label for="name">Ваше ім’я</label>
-                    <input type="text" name="name" placeholder="Іван" />
+                    <input type="text" id="name" name="name" placeholder="Іван" required="required"/>
                   </div>
                   <div class="form__field">
                     <label for="phone">Номер телефона</label>
                     <input
-                      type="text"
-                      name="phone"
-                      placeholder="+380501111111"
+                      type="tel"
+                      id="phone" name="phone"
+                      placeholder="+380501111111" required="required"
                     />
                   </div>
                 </li>
                 <li class="form__field">
-                  <label>Ваше повідомлення</label>
-                  <textarea placeholder="Текст вашого повідомлення"></textarea>
+                  <label for="message">Ваше повідомлення</label>
+                  <textarea id="message" name="message" placeholder="Текст вашого повідомлення"></textarea>
                 </li>
-                <button type="submit">Надіслати</button>
+                <button class="button" type="submit">Надіслати</button>
               </ul>
             </form>
           </div>
