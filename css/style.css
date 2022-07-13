@@ -61,6 +61,10 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
 .title {
   position: relative;
   font-style: normal;
@@ -76,7 +80,6 @@ body {
   position: relative;
 }
 .header__content {
-  background-image: url("../images/header-bg.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -161,12 +164,14 @@ body {
   z-index: 5;
 }
 .header-subtitle {
+  display: block;
   padding-top: 170px;
   font-weight: 400;
   font-size: 48px;
   line-height: 130%;
 }
 .header-title {
+  display: block;
   max-width: 520px;
   font-weight: 700;
   font-size: 90px;
