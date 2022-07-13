@@ -50,16 +50,18 @@
           </div>
         </div>
       </div>
-      <div class="header__content">
+      <div class="header__content" style="background-image: url('images/header-bg.jpg')">
         <div class="container">
-          <div class="header__content-inner bg">
+          <div class="header__content-inner" >
             <div class="content__text">
-              <h2 class="header-subtitle">Вітаю, я Сергій Сірко</h2>
-              <h1 class="header-title">frontend- розробник</h1>
+              <h1 class="visually-hidden">Портфоліо frontend-розробник Сергія Сірка</h1>
+              <span class="header-subtitle">Вітаю, я Сергій Сірко</span>
+              <span class="header-title">frontend- розробник</span>
             </div>
             <div class="header__more">
               <a class="header__more-text" href="#portfolio">дивитися роботи</a>
             </div>
+<<<<<<< Updated upstream
           </div>
         </div>
       </div>
@@ -228,36 +230,37 @@
           </div>
         </div>
       </section>
-      <div class="numbers">
+      <section class="numbers">
         <div class="container">
+          <h2 class="visually-hidden">Статистика</h2>
           <ul class="numbers__items">
             <li class="numbers__item numbers__item--works">
-              <h4 class="numbers__title">
+              <h3 class="numbers__title">
                 <span>Виконаних робіт</span>
                 56
-              </h4>
+              </h3>
             </li>
             <li class="numbers__item numbers__item--clients">
-              <h4 class="numbers__title">
+              <h3 class="numbers__title">
                 <span>Задоволених клієнтів</span>
                 23
-              </h4>
+              </h3>
             </li>
             <li class="numbers__item numbers__item--coffee">
-              <h4 class="numbers__title">
+              <h3 class="numbers__title">
                 <span>Випито горнят кави</span>
                 477
-              </h4>
+              </h3>
             </li>
             <li class="numbers__item numbers__item--review">
-              <h4 class="numbers__title">
+              <h3 class="numbers__title">
                 <span>Усього відгуків</span>
                 48
-              </h4>
+              </h3>
             </li>
           </ul>
         </div>
-      </div>
+      </section>
       <section class="contacts">
         <div class="container">
           <h2 class="title contacts__title">Контакти</h2>
@@ -290,6 +293,170 @@
                   </a>
                 </li>
               </ul>
+=======
+        </header>
+        
+        <main class="main">
+            <section class="about">
+                <div class="container">
+                    <div class="about__inner">
+                        <h2 class="title about__title">Про мене</h2>
+                        <div class="about__text">
+                            <p>
+                                Вітаю всіх на своєму сайті! Мене звати Сергій, я з Івано-Франківська. Займаюся фронтенд-розробкою трохи більше року. До розробки займався нелюбимою справою, ходив на роботу, що не подобалася мені, не міг зрозуміти, як знайти працю за покликанням і робити те, що подобається, заробляючи собі на життя, допоки не знайшов один цікавий курс.
+                            </p>
+                            <p>
+                                З того часу багато чого дізнався, навчання давалося по-різному: десь легше, десь складніше. Щоденна робота над навичками та зусилля, яких я докладав, вже за кілька місяців принесли плоди - вдалось взяти замовлення на фрілансі. З відгуками від задоволених клієнтів та прикладами моїх робіт можна ознайомитися нижче
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="skills">
+                <div class="container">
+                    <h2 class="title skills__title">Навички</h2>
+                    <div class="skills__inner">
+                        <img class="skills__image" src="images/skills-image.jpg" alt="Портрет">
+                        <ul class="skills__info">
+                            <li class="skills__info-item">
+                                <div class="skills__info-title">HTML</div>
+                                <div class="skills__info-row">
+                                    <span style="width:calc(600px - 510px);"></span>
+                                </div>
+                            </li>
+                            <li class="skills__info-item">
+                                <div class="skills__info-title">CSS</div>
+                                <div class="skills__info-row">
+                                    <span style="width:calc(600px - 480px);"></span>
+                                </div>
+                            </li>
+                            <li class="skills__info-item">
+                                <div class="skills__info-title">JS</div>
+                                <div class="skills__info-row">
+                                    <span style="width:calc(600px - 366px);"></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services">
+                <div class="container">
+                    <h2 class="title services__title">Послуги</h2>
+                    <ul class="services__items">
+                        <li class="services__item services__item--layout">
+                            <h3 class="services__item-title">Верстка проєктів</h3>
+                            <p class="services__item-text">Зроблю якісну верстку вашого проєкта за наявним макетом або прикладами робіт, які вам подобаються</p>
+                        </li>
+                        <li class="services__item services__item--dev">
+                            <h3 class="services__item-title">Посадка на CMS</h3>
+                            <p class="services__item-text">Інтегрую ваш проєкт з однією з популярних CMS</p>
+                        </li>
+                        <li class="services__item services__item--support">
+                            <h3 class="services__item-title">Підтримка сайта</h3>
+                            <p class="services__item-text">Гарантую підтримку вашого сайта протягом 30 днів післе здачі проєкта</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="portfolio" id="portfolio">
+                <div class="container">
+                    <div class="portfolio__top">
+                        <h2 class="title portfolio__title">Мої роботи</h2>
+                        <div class="portfolio__filter-btn">
+                            <button class="portfolio__btn" data-filter="all">Усі роботи</button>
+                            <button class="portfolio__btn" data-filter=".category-a">Лендінги</button>
+                            <button class="portfolio__btn" data-filter=".category-b">Корпоративні</button>
+                            <button class="portfolio__btn" data-filter=".category-c">E-commerce</button>
+                        </div>
+                    </div>
+                    <ul class="portfolio__content">
+                        <li class="portfolio__item mix category-a">
+                            <a class="portfolio__link" href="#">
+                                <img src="images/portfolio/img1.jpg" alt="Моя робота">
+                            </a>
+                        </li>
+                        <li class="portfolio__item mix category-a">
+                            <a class="portfolio__link" href="#">
+                                <img src="images/portfolio/img2.jpg" alt="Моя робота">
+                            </a>
+                        </li>
+                        <li class="portfolio__item mix category-b">
+                            <a class="portfolio__link" href="#">
+                                <img src="images/portfolio/img3.jpg" alt="Моя робота">
+                            </a>
+                        </li>
+                        <li class="portfolio__item mix category-b">
+                            <a class="portfolio__link" href="#">
+                                <img src="images/portfolio/img4.jpg" alt="Моя робота">
+                            </a>
+                        </li>
+                        <li class="portfolio__item mix category-c">
+                            <a class="portfolio__link" href="#">
+                                <img src="images/portfolio/img5.jpg" alt="Моя робота">
+                            </a>
+                        </li>
+                        <li class="portfolio__item mix category-c">
+                            <a class="portfolio__link" href="#">
+                                <img src="images/portfolio/img6.jpg" alt="Моя робота">
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="portfolio__add" href="#">Завантажити ще</button>
+                </div>
+            </section>
+
+            <section class="reviews">
+                <div class="container">
+                    <h2 class="title reviews__title">Відгуки клієнтів</h2>
+                    <div class="reviews__inner">
+                        <blockquote class="reviews__blockquote">
+                            <img class="reviews__image" src="images/customer.jpg" alt="Фото клієнта">
+                            <span class="reviews__author">Марк Цукерберг</span>
+                            Фантастично! Я цілком задоволений роботою цього спеціаліста. Швидко і якісно. Рекомендую!
+                        </blockquote>
+                        <div class="reviews__video">
+                            <a data-fancybox class="reviews__video-link" href="https://youtu.be/SvF0vbTJORw">
+                                <img src="images/play.svg" alt="Іконка старту">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="numbers">
+                <div class="container">
+                    <ul class="numbers__items">
+                        <li class="numbers__item numbers__item--works">
+                            <h4 class="numbers__title">
+                                <span>Виконаних робіт</span>
+                                56
+                            </h4>
+                        </li>
+                        <li class="numbers__item numbers__item--clients ">
+                            <h4 class="numbers__title ">
+                                <span>Задоволених клієнтів</span>
+                                23
+                            </h4>
+                        </li>
+                        <li class="numbers__item numbers__item--coffee">
+                            <h4 class="numbers__title">
+                                <span>Випито горнят кави</span>
+                                477
+                            </h4>
+                        </li>
+                        <li class="numbers__item numbers__item--review">
+                            <h4 class="numbers__title">
+                                <span>Усього відгуків</span>
+                                48
+                            </h4>
+                        </li>
+                    </ul>
+                </div>
+>>>>>>> Stashed changes
             </div>
             <form class="contacts__forms">
               <ul class="form">
