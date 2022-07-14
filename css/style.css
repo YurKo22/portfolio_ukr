@@ -563,19 +563,12 @@ body {
   align-items: center;
 }
 .numbers__item {
-<<<<<<< Updated upstream
   padding: 150px 40px 50px;
   background: #f6f6f8;
   border: 1px solid #dbdbed;
   position: relative;
   width: 23.333%;
   max-height: 286px;
-=======
-  padding: 50px 46px;
-  background: #f6f6f8;
-  border: 1px solid #dbdbed;
-  position: relative;
->>>>>>> Stashed changes
 }
 .numbers__item:not(:last-child) {
   margin-right: 17px;
@@ -584,17 +577,9 @@ body {
   content: "";
   display: block;
   position: absolute;
-<<<<<<< Updated upstream
   top: 50px;
   left: 35%;
   height: 80px;
-=======
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 80px;
-  margin-bottom: 20px;
->>>>>>> Stashed changes
 }
 .numbers__item--works::before {
   background-image: url(..//images/works-icon.svg);
@@ -608,11 +593,7 @@ body {
   background-image: url(..//images/coffee-icon.svg);
   width: 80px;
 }
-<<<<<<< Updated upstream
 .numbers__item--review::before {
-=======
-.numbers__item--works::before {
->>>>>>> Stashed changes
   background-image: url(..//images/review-icon.svg);
   width: 80px;
 }
