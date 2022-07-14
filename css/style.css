@@ -655,10 +655,10 @@ body {
   margin-bottom: 15px;
   transition: outline-color 0.3s;
 }
-.contacts__phone:focus{
+.contacts__phone:focus {
   outline-color: #91a8ef;
 }
-.contacts__phone:hover{
+.contacts__phone:hover {
   text-decoration: underline;
 }
 
@@ -666,10 +666,10 @@ body {
   margin-bottom: 21px;
   transition: outline-color 0.3s;
 }
-.contacts__mail:focus{
+.contacts__mail:focus {
   outline-color: #91a8ef;
 }
-.contacts__mail:hover{
+.contacts__mail:hover {
   text-decoration: underline;
 }
 .contacts__socials {
@@ -721,7 +721,7 @@ body {
 }
 .form input,
 .form textarea:hover {
-  color: #000000;;
+  color: #000000;
 }
 .button {
   padding: 12px 24px;
@@ -751,4 +751,33 @@ body {
 }
 .footer__logo {
   padding: 50px 0;
+}
+/* -------------------------------- */
+@media (max-width: 867px) {
+  .menu__list {
+    display: none;
+  }
+  .header-subtitle {
+    font-size: 43px;
+  }
+  .header-title {
+    font-size: 63px;
+  }
+}
+@media (max-width: 468px) {
+  .header-subtitle {
+    font-size: 28px;
+  }
+  .header-title {
+    max-width: 400px;
+    font-size: 40px;
+  }
+  .header__more-text {
+    font-size: 14px;
+}
+.header__more {
+    left: 35%;
+}
+.header__more-text::after {
+    left: 27%;}
 }
