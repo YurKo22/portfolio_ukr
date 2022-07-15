@@ -758,6 +758,9 @@ body {
     font-size: 40px;
     line-height: 150%;
     margin-bottom: 45px;
+    display: flex;
+    justify-content: center;
+    position: relative;
   }
   .header__top-inner {
     align-items: center;
@@ -829,6 +832,27 @@ body {
   }
   .about__title::after {
     width: 202px;
+    position: absolute;
+    left: auto;
+  }
+
+  .skills {
+    padding: 75px 0;
+  }
+  .skills__title::after {
+    width: 196px;
+    position: absolute;
+    left: auto;
+  }
+  .skills__inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .skills__inner img {
+    margin: 0 auto 45px;
+  }
+  skills__info-item {
+    flex-direction: column;
   }
 }
 
@@ -886,5 +910,12 @@ body {
   }
   .about__text p:not(:last-child) {
     margin-bottom: 15px;
+  }
+
+  .skills {
+    padding: 50px 0;
+  }
+  .skills__inner img {
+    margin-bottom: 30px;
   }
 }
