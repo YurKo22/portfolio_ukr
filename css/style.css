@@ -287,7 +287,7 @@ body {
   opacity: 0.64;
 }
 .skills__info-row {
-  width: 600px;
+  width: 54vh;
   background-color: #2352de;
   height: 32px;
   position: relative;
@@ -785,7 +785,7 @@ body {
   }
   .menu__list {
     position: absolute;
-    max-height: 100vh;
+    max-height: 80vh;
     left: 0;
     right: 0;
     top: 0;
@@ -849,6 +849,8 @@ body {
     flex-direction: column;
   }
   .skills__inner img {
+    width: 100vh;
+    padding: 0 23px;
     margin: 0 auto 45px;
   }
   skills__info-item {
