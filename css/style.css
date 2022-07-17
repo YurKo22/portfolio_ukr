@@ -1002,7 +1002,7 @@ body {
     bottom: 2px;
   }
   .skills__info-row {
-    width: 70vh;
+    width: 45vh;
   }
   .skills__info-item:not(:last-child) {
     margin-bottom: 24px;
