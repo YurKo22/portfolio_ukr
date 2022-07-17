@@ -287,7 +287,7 @@ body {
   opacity: 0.64;
 }
 .skills__info-row {
-  width: 54vh;
+  width: 600px;
   background-color: #2352de;
   height: 32px;
   position: relative;
@@ -753,6 +753,39 @@ body {
   padding: 50px 0;
 }
 /* ============== Adaptive ================ */
+@media (max-width: 1200px) {
+  .skills__image {
+    margin-right: 80px;
+  }
+  .skills__info-row {
+    width: 55vh;
+    padding-right: 15px;
+  }
+}
+@media (max-width: 1167px) {
+  .skills__image {
+    margin-right: 70px;
+  }
+}
+@media (max-width: 1067px) {
+  .skills__image {
+    margin-right: 60px;
+  }
+}
+@media (max-width: 967px) {
+  .skills__image {
+    margin-right: 50px;
+  }
+  .skills__info-item {
+    flex-direction: column;
+  }
+  .skills__info-title {
+    margin: 0 auto 10px;
+  }
+  .skills__info-item:not(:last-child) {
+    margin-bottom: 60px;
+  }
+}
 @media (max-width: 867px) {
   .title {
     font-size: 40px;
@@ -835,7 +868,6 @@ body {
     position: absolute;
     left: auto;
   }
-
   .skills {
     padding: 75px 0;
   }
@@ -849,12 +881,16 @@ body {
     flex-direction: column;
   }
   .skills__inner img {
-    width: 100vh;
+    width: 90vh;
     padding: 0 23px;
     margin: 0 auto 45px;
   }
-  skills__info-item {
-    flex-direction: column;
+  .skills__info-row {
+    width: 80vh;
+    padding-right: 15px;
+  }
+  .skills__info-item:not(:last-child) {
+    margin-bottom: 50px;
   }
 }
 
@@ -919,5 +955,39 @@ body {
   }
   .skills__inner img {
     margin-bottom: 30px;
+  }
+  .skills__info-title {
+    margin-bottom: 5px;
+  }
+  .skills__title::after {
+    width: 136px;
+    height: 10px;
+    bottom: 2px;
+  }
+  .skills__info-row {
+    width: 70vh;
+  }
+  .skills__info-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 437px) {
+  .skills__info-row {
+    width: 60vh;
+  }
+}
+@media (max-width: 397px) {
+  .skills__info-row {
+    width: 55vh;
+  }
+}
+@media (max-width: 375px) {
+  .skills__info-row {
+    width: 50vh;
+  }
+}
+@media (max-width: 319px) {
+  .skills__info-row {
+    width: 40vh;
   }
 }
