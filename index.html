@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&family=Roboto&display=swap"
       rel="stylesheet"
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Портфоліо Сергія Сірка | Головна сторінка</title>
   </head>
+
   <body>
     <header class="header">
       <div class="header__top">
@@ -26,9 +27,10 @@
             <a class="logo" href="#">
               <img class="logo-img" src="images/logo.svg" alt="Логотип" />
             </a>
+
             <nav class="menu">
-              <button class="menu__btn">
-              </button>
+              <button class="menu__btn"></button>
+
               <ul class="menu__list">
                 <li class="menu__item">
                   <a class="menu__link" href="#">Про мене</a>
@@ -53,14 +55,20 @@
           </div>
         </div>
       </div>
-      <div class="header__content" style="background-image: url('images/header-bg.jpg')">
+      <div
+        class="header__content"
+        style="background-image: url('images/header-bg.jpg')"
+      >
         <div class="container">
-          <div class="header__content-inner" >
+          <div class="header__content-inner">
             <div class="content__text">
-              <h1 class="visually-hidden">Портфоліо frontend-розробник Сергія Сірка</h1>
+              <h1 class="visually-hidden">
+                Портфоліо frontend-розробник Сергія Сірка
+              </h1>
               <span class="header-subtitle">Вітаю, я Сергій Сірко</span>
               <span class="header-title">frontend- розробник</span>
             </div>
+
             <div class="header__more">
               <a class="header__more-text" href="#portfolio">дивитися роботи</a>
             </div>
@@ -68,12 +76,13 @@
         </div>
       </div>
     </header>
-    
+
     <main class="main">
       <section class="about">
         <div class="container">
           <div class="about__inner">
             <h2 class="title about__title">Про мене</h2>
+            
             <div class="about__text">
               <p>
                 Вітаю всіх на своєму сайті! Мене звати Сергій, я з
@@ -95,16 +104,18 @@
           </div>
         </div>
       </section>
-      
+
       <section class="skills">
         <div class="container">
           <h2 class="title skills__title">Навички</h2>
+          
           <div class="skills__inner">
             <img
               class="skills__image"
               src="images/skills-image.jpg"
               alt="Портрет"
             />
+            
             <ul class="skills__info">
               <li class="skills__info-item">
                 <div class="skills__info-title">html</div>
@@ -156,11 +167,12 @@
           </ul>
         </div>
       </section>
-      
+
       <section class="portfolio" id="portfolio">
         <div class="container">
           <div class="portfolio__top">
             <h2 class="title portfolio__title">Мої роботи</h2>
+            
             <div class="portfolio__filter-btn">
               <button class="portfolio__btn" data-filter="all">
                 Усі роботи
@@ -176,6 +188,7 @@
               </button>
             </div>
           </div>
+          
           <ul class="portfolio__content">
             <li class="portfolio__item mix category-a">
               <a class="portfolio__link" href="#">
@@ -215,6 +228,7 @@
       <section class="reviews">
         <div class="container">
           <h2 class="title reviews__title">Відгуки клієнтів</h2>
+          
           <div class="reviews__inner">
             <blockquote class="reviews__blockquote">
               <img
@@ -241,6 +255,7 @@
       <section class="numbers">
         <div class="container">
           <h2 class="visually-hidden">Статистика</h2>
+          
           <ul class="numbers__items">
             <li class="numbers__item numbers__item--works">
               <h3 class="numbers__title">
@@ -273,56 +288,76 @@
       <section class="contacts">
         <div class="container">
           <h2 class="title contacts__title">Контакти</h2>
+          
           <div class="contacts__inner">
             <div class="contacts__info">
               <div class="contacts__text">
                 Вийти зі мною на зв’язок можна, скориставшись контактною формою,
                 або напряму за номером телефона, email, у соцмережах:
               </div>
-              <a href="tel:+380501111111" class="contacts__phone"
+
+              <a href="tel:+380501111111" class="contacts__data"
                 >+38 (050) 111 11 11</a
               >
-              <a href="mailto:frontend-monster@email.com" class="contacts__mail"
+              
+              <a href="mailto:frontend-monster@email.com" class="contacts__data contacts__data--mail"
                 >frontend-monster@email.com</a
               >
+              
               <ul class="contacts__socials">
-                <li class="contacts__socials-link">
-                  <a href="https://www.instagram.com">
+                <li class="contacts__social">
+                  <a class="contacts__social-link" href="https://www.instagram.com">
                     <img src="images/instagram-icon.svg" alt="Instagram" />
                   </a>
                 </li>
-                <li class="contacts__socials-link">
-                  <a href="https://www.facebook.com">
+                <li class="contacts__social">
+                  <a class="contacts__social-link" href="https://www.facebook.com">
                     <img src="images/facebook-icon.svg" alt="Facebook" />
                   </a>
                 </li>
-                <li class="contacts__socials-link">
-                  <a href="https://telegram.com/">
+                <li class="contacts__social">
+                  <a class="contacts__social-link" href="https://telegram.com/">
                     <img src="images/telegram-icon.svg" alt="Telegram" />
                   </a>
                 </li>
               </ul>
             </div>
+            
             <form class="contacts__forms">
               <ul class="form">
                 <li class="form__row">
                   <div class="form__field">
                     <label for="name">Ваше ім’я</label>
-                    <input type="text" id="name" name="name" placeholder="Іван" required="required"/>
+                    <input class="form__data"
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Іван"
+                      required="required"
+                    />
                   </div>
+                  
                   <div class="form__field">
                     <label for="phone">Номер телефона</label>
-                    <input
+                    <input class="form__data"
                       type="tel"
-                      id="phone" name="phone"
-                      placeholder="+380501111111" required="required"
+                      id="phone"
+                      name="phone"
+                      placeholder="+380501111111"
+                      required="required"
                     />
                   </div>
                 </li>
+                
                 <li class="form__field">
                   <label for="message">Ваше повідомлення</label>
-                  <textarea id="message" name="message" placeholder="Текст вашого повідомлення"></textarea>
+                  <textarea class="form__message"
+                    id="message"
+                    name="message"
+                    placeholder="Текст вашого повідомлення"
+                  ></textarea>
                 </li>
+
                 <button class="button" type="submit">Надіслати</button>
               </ul>
             </form>

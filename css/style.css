@@ -74,6 +74,7 @@ body {
   color: #333333;
   margin-bottom: 60px;
 }
+
 /* --------- header --------------*/
 .container-header {
   max-width: 1200px;
@@ -218,6 +219,7 @@ body {
 .header__more-text:active {
   color: rgba(255, 255, 255, 0.7);
 }
+
 /* --------- Section About------------ */
 .about {
   padding: 142px 0;
@@ -241,6 +243,7 @@ body {
 .about__text p:not(:last-child) {
   margin-bottom: 25px;
 }
+
 /* --------- Section Skills-------------- */
 .skills {
   background-color: #f6f6f8;
@@ -305,6 +308,7 @@ body {
   background-color: #dbdbed;
   width: 100%;
 }
+
 /* -------- Serction services ---------- */
 .services {
   padding: 140px 0;
@@ -360,6 +364,7 @@ body {
   line-height: 160%;
   color: #333333;
 }
+
 /* -------- Section portfolio -------- */
 .portfolio {
   padding-bottom: 140px;
@@ -450,6 +455,7 @@ body {
   color: #ffffff;
   box-shadow: inset 0px 7px 4px rgba(0, 0, 0, 0.25);
 }
+
 /* ------------ Section reviews ----------------- */
 .reviews {
   padding: 140px 0;
@@ -543,16 +549,17 @@ body {
   opacity: 0.3;
 }
 .reviews__video-link:hover::after {
-  opacity: 1;
   background-image: url(../images/play.svg);
   background-repeat: no-repeat;
   background-size: 22%;
   background-position: center center;
+  opacity: 1;
 }
 .reviews__video-link:active::after {
-  opacity: 0.667;
   background-size: 6%;
+  opacity: 0.667;
 }
+
 /* ---------- Section numbers -------------- */
 .numbers {
   padding: 140px 0;
@@ -613,6 +620,7 @@ body {
   color: #333333;
   margin-bottom: 20px;
 }
+
 /* ------ Section Contacts ----------- */
 .contacts {
   padding-bottom: 140px;
@@ -645,43 +653,33 @@ body {
   color: #333333;
   margin-bottom: 30px;
 }
-.contacts__phone,
-.contacts__mail {
+.contacts__data {
   font-weight: 400;
   font-size: 16px;
   line-height: 130%;
   color: #2352de;
-}
-.contacts__phone {
   margin-bottom: 15px;
   transition: outline-color 0.3s;
 }
-.contacts__phone:focus {
+.contacts__data:focus {
   outline-color: #91a8ef;
 }
-.contacts__phone:hover {
+.contacts__data:hover {
   text-decoration: underline;
 }
-.contacts__mail {
+.contacts__data--mail {
   margin-bottom: 21px;
-  transition: outline-color 0.3s;
-}
-.contacts__mail:focus {
-  outline-color: #91a8ef;
-}
-.contacts__mail:hover {
-  text-decoration: underline;
 }
 .contacts__socials {
   display: flex;
 }
-.contacts__socials-link {
+.contacts__social {
   transition: outline-color 0.3s;
 }
-.contacts__socials-link:not(:last-child) {
+.contacts__social:not(:last-child) {
   margin-right: 20px;
 }
-.contacts__socials-link a:focus {
+.contacts__social-link:focus {
   outline-color: #91a8ef;
 }
 .form__row {
@@ -693,8 +691,8 @@ body {
   margin-bottom: 10px;
   color: #333333;
 }
-.form input,
-.form textarea {
+.form__data,
+.form__message {
   border: none;
   padding: 13px 15px;
   font-weight: 400;
@@ -702,25 +700,25 @@ body {
   margin-bottom: 30px;
   transition: outline-color 0.3s;
 }
-.form input {
+.form__data {
   min-width: 255px;
 }
-.form input::placeholder,
-.form textarea::placeholder {
+.form__data::placeholder,
+.form__message::placeholder {
   font-weight: 400;
   color: #9c9cab;
 }
-.form textarea {
+.form__message {
   min-width: 540px;
   min-height: 114px;
   resize: none;
 }
-.form input,
-.form textarea:focus {
+.form__data,
+.form__message:focus {
   outline-color: #91a8ef;
 }
-.form input,
-.form textarea:hover {
+.form__data,
+.form__message:hover {
   color: #000000;
 }
 .button {
@@ -742,6 +740,7 @@ body {
   outline: 2px rgba(210, 232, 246, 0.5);
   outline-style: solid;
 }
+
 /* -------  footer ----------- */
 .footer {
   background-color: #343740;
@@ -763,8 +762,8 @@ body {
     padding-right: 15px;
   }
   .services__item:not(:last-child) {
-   margin-right: 70px;
- }
+    margin-right: 70px;
+  }
 }
 
 @media (max-width: 1067px) {
@@ -1013,8 +1012,8 @@ body {
     bottom: 2px;
   }
   .services {
-   padding: 50px 0;
- }
+    padding: 50px 0;
+  }
   .services__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1024,10 +1023,10 @@ body {
     padding-top: 50px;
   }
   .services__title::after {
-   width: 122px;
-   height: 10px;
-   bottom: 2px;
- }
+    width: 122px;
+    height: 10px;
+    bottom: 2px;
+  }
   .services__item::before {
     width: 40px;
     height: 40px;
