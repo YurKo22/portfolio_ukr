@@ -543,9 +543,9 @@ body {
 .reviews__video-link img::after {
   display: none;
 }
-.reviews__video-link:focus::before{
-  display: none;;
-} 
+.reviews__video-link:focus::before {
+  display: none;
+}
 .reviews__video-link:focus::after {
   border: 3px solid #90a8ee;
   opacity: 0.3;
@@ -753,6 +753,17 @@ body {
 .footer__logo {
   padding: 50px 0;
 }
+.footer__logo:focus {
+  outline: 2px rgba(210, 232, 246, 0.5);
+  border-radius: 3px;
+  outline-style: solid;
+}
+.lfooter__logo:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.footer__logo:active {
+  background-color: rgba(255, 255, 255, 0.5);
+}
 
 /* ============== Adaptive ================ */
 @media (max-width: 1200px) {
@@ -768,6 +779,10 @@ body {
   }
   .services__item:not(:last-child) {
     margin-right: 65px;
+  }
+  .numbers__item {
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
@@ -795,6 +810,16 @@ body {
   }
   .reviews__blockquote {
     margin-right: 60px;
+  }
+  .numbers__item {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .numbers__title span {
+    font-size: 16px;
+  }
+  .numbers__title {
+    font-size: 38px;
   }
 }
 
@@ -972,6 +997,35 @@ body {
   .reviews__video-link::before {
     background-size: 25%;
   }
+  .numbers {
+    padding: 75px 0;
+  }
+  .numbers__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .numbers__item {
+    max-height: 250px;
+    width: 48%;
+    padding: 130px 15px 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  .numbers__item::before {
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .numbers__item:not(:last-child) {
+    margin-right: 0;
+  }
+  .numbers__title {
+    font-size: 33px;
+  }
+  .numbers__title span {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1043,7 +1097,7 @@ body {
     bottom: 2px;
   }
   .skills__info-row {
-    width: 45vh;
+    width: 40vh;
   }
   .skills__info-item:not(:last-child) {
     margin-bottom: 24px;
@@ -1133,5 +1187,11 @@ body {
   }
   .reviews__video-link:hover::after {
     background-size: 25%;
+  }
+  .numbers {
+    padding: 50px 0;
+  }
+  .numbers__title {
+    font-size: 30px;
   }
 }
