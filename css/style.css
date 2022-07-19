@@ -755,30 +755,21 @@ body {
 /* ============== Adaptive ================ */
 @media (max-width: 1200px) {
   .skills__image {
-    margin-right: 70px;
+    margin-right: 65px;
   }
   .skills__info-row {
     width: 55vh;
     padding-right: 15px;
   }
-  .services__item:not(:last-child) {
-    margin-right: 70px;
-  }
-}
-
-@media (max-width: 1067px) {
-  .skills__image {
-    margin-right: 60px;
-  }
   .services__item {
     max-width: 290px;
   }
   .services__item:not(:last-child) {
-    margin-right: 60px;
+    margin-right: 65px;
   }
 }
 
-@media (max-width: 967px) {
+@media (max-width: 992px) {
   .skills__image {
     margin-right: 50px;
   }
@@ -799,14 +790,14 @@ body {
   }
 }
 
-@media (max-width: 867px) {
+@media (max-width: 768px) {
   .title {
+    position: relative;
+    display: flex;
+    justify-content: center;
     font-size: 40px;
     line-height: 150%;
     margin-bottom: 45px;
-    display: flex;
-    justify-content: center;
-    position: relative;
   }
   .header__top-inner {
     align-items: center;
@@ -932,7 +923,7 @@ body {
   }
 }
 
-@media (max-width: 468px) {
+@media (max-width: 576px) {
   .title {
     font-size: 28px;
     line-height: 130%;
