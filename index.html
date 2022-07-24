@@ -29,7 +29,8 @@
             </a>
 
             <nav class="menu">
-              <button class="menu__btn"></button>
+              <button class="menu__btn" type="button"></button>
+              <span class="sr-only">Відкрити меню</span>
 
               <ul class="menu__list">
                 <li class="menu__item">
@@ -176,15 +177,19 @@
             <div class="portfolio__filter-btn">
               <button class="portfolio__btn" data-filter="all">
                 Усі роботи
+                <span class="sr-only">Показати всі роботи</span>
               </button>
               <button class="portfolio__btn" data-filter=".category-a">
                 Лендінги
+                <span class="sr-only">Показати роботи з категорії "Лендінги"</span>
               </button>
               <button class="portfolio__btn" data-filter=".category-b">
                 Корпоративні
+                <span class="sr-only">Показати роботи з категорії "Корпоративні"</span>
               </button>
               <button class="portfolio__btn" data-filter=".category-c">
                 E-commerce
+                <span class="sr-only">Показати роботи з категорії "E-commerce"</span>
               </button>
             </div>
           </div>
@@ -192,32 +197,38 @@
           <ul class="portfolio__content">
             <li class="portfolio__item mix category-a">
               <a class="portfolio__link" href="#">
-                <img src="images/portfolio/img1.jpg" alt="Моя робота" />
+                <img src="images/portfolio/img1.jpg" alt="Фото роботи в категорії Лендінги" />
+                <span class="sr-only">Відкрити роботу з категорії "Лендінги"</span>
               </a>
             </li>
             <li class="portfolio__item mix category-a">
               <a class="portfolio__link" href="#">
-                <img src="images/portfolio/img2.jpg" alt="Моя робота" />
+                <img src="images/portfolio/img2.jpg" alt="Фото роботи в категорії Лендінги" />
+                <span class="sr-only">Відкрити роботу з категорії "Лендінги"</span>
               </a>
             </li>
             <li class="portfolio__item mix category-b">
               <a class="portfolio__link" href="#">
-                <img src="images/portfolio/img3.jpg" alt="Моя робота" />
+                <img src="images/portfolio/img3.jpg" alt="Фото роботи в категорії Корпоративні" />
+                <span class="sr-only">Відкрити роботу з категорії "Корпоративні"</span>
               </a>
             </li>
             <li class="portfolio__item mix category-b">
               <a class="portfolio__link" href="#">
-                <img src="images/portfolio/img4.jpg" alt="Моя робота" />
+                <img src="images/portfolio/img4.jpg" alt="Фото роботи в категорії Корпоративні" />
+                <span class="sr-only">Відкрити роботу з категорії "Корпоративні"</span>
               </a>
             </li>
             <li class="portfolio__item mix category-c">
               <a class="portfolio__link" href="#">
-                <img src="images/portfolio/img5.jpg" alt="Моя робота" />
+                <img src="images/portfolio/img5.jpg" alt="Фото роботи в категорії E-commerce" />
+                <span class="sr-only">Відкрити роботу з категорії "E-commerce"</span>
               </a>
             </li>
             <li class="portfolio__item mix category-c">
               <a class="portfolio__link" href="#">
-                <img src="images/portfolio/img6.jpg" alt="Моя робота" />
+                <img src="images/portfolio/img6.jpg" alt="Фото роботи в категорії E-commerce" />
+                <span class="sr-only">Відкрити роботу з категорії "E-commerce"</span>
               </a>
             </li>
           </ul>
@@ -230,22 +241,23 @@
           <h2 class="title reviews__title">Відгуки клієнтів</h2>
 
           <div class="reviews__inner">
-            <blockquote class="reviews__blockquote">
+            <figure class="reviews__figure">
               <img
                 class="reviews__image"
                 src="images/customer.jpg"
-                alt="Фото клієнта"
+                alt="Фото клієнта Марка Цукерберга "
               />
               <span class="reviews__author">Марк Цукерберг</span>
               Фантастично! Я цілком задоволений роботою цього спеціаліста.
               Швидко і якісно. Рекомендую!
-            </blockquote>
+            </а>
             <div class="reviews__video">
               <a
                 data-fancybox
                 class="reviews__video-link"
                 href="https://youtu.be/SvF0vbTJORw"
               >
+              <span class="sr-only">Відкрити відео</span>
               </a>
             </div>
           </div>
@@ -296,14 +308,18 @@
                 або напряму за номером телефона, email, у соцмережах:
               </div>
 
-              <a href="tel:+380501111111" class="contacts__data"
-                >+38 (050) 111 11 11</a
+              <a href="tel:+380501111111" class="contacts__data"  
               >
+              <span class="sr-only">Зателефонувати мені</span>
+              +38 (050) 111 11 11</a
+                >
 
               <a
                 href="mailto:frontend-monster@email.com"
                 class="contacts__data contacts__data--mail"
-                >frontend-monster@email.com</a
+                >
+                <span class="sr-only">Написати мені на пошту</span>
+                frontend-monster@email.com</a
               >
 
               <ul class="contacts__socials">
@@ -312,7 +328,8 @@
                     class="contacts__social-link"
                     href="https://www.instagram.com"
                   >
-                    <img src="images/instagram-icon.svg" alt="Instagram" />
+                  <img src="images/instagram-icon.svg" alt="Іконка Instagram" />
+                  <span class="sr-only">Перейти на мій акаунт в Instagram</span>
                   </a>
                 </li>
                 <li class="contacts__social">
@@ -320,12 +337,14 @@
                     class="contacts__social-link"
                     href="https://www.facebook.com"
                   >
-                    <img src="images/facebook-icon.svg" alt="Facebook" />
+                    <img src="images/facebook-icon.svg" alt="Іконка Facebook" />
+                    <span class="sr-only">Перейти на мій акаунт в Facebook</span>
                   </a>
                 </li>
                 <li class="contacts__social">
                   <a class="contacts__social-link" href="https://telegram.com/">
                     <img src="images/telegram-icon.svg" alt="Telegram" />
+                    <span class="sr-only">Перейти на мій акаунт в Telegram</span>
                   </a>
                 </li>
               </ul>
@@ -380,6 +399,7 @@
     <footer class="footer">
       <a href="#header" class="footer__logo">
         <img src="images/logo.svg" alt="Лого" />
+        <span class="sr-only">Перейти на Головну</span>
       </a>
     </footer>
 
