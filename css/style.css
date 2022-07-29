@@ -884,7 +884,7 @@ body {
     padding: 7px 90px 5px 0;
     position: relative;
     transition: background-image 0.3s;
-    z-index: 3;
+    z-index: 5;
   }
   .logo {
     position: relative;
@@ -901,7 +901,7 @@ body {
     text-align: center;
     transform: translateY(-200%);
     transition: transform 0.5s;
-    z-index: 2;
+    z-index: 3;
   }
   .header__top-inner.header__top-inner--active .menu__list {
     transform: translateY(0);
